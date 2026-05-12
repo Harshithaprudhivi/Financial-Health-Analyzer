@@ -13,7 +13,7 @@ function App() {
     formData.append("file", file);
 
     const response = await axios.post(
-      "https://financial-health-analysis.onrender.com/analyze",
+      "https://financial-health-analyzer.onrender.com/analyze",
       formData
     );
 
@@ -25,7 +25,7 @@ function App() {
   formData.append("file", file);
 
   const response = await axios.post(
-    "https://financial-health-analysis.onrender.com/generate-report",
+    "https://financial-health-analyzer.onrender.com/generate-report",
     formData,
     { responseType: "blob" }
   );
